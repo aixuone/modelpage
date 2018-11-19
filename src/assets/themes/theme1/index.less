@@ -1,0 +1,23 @@
+//定义变量
+@color : #f00;
+@font :  #000 20px;
+@titlemargin: 20px auto;
+@img : url(img/1.png);
+.img(@width,@height){
+    width: @width;
+    height: @height;
+    background-image: @img;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-color:#f00;
+}
+//样式表
+h1{
+    color:@color;
+    font: @font;
+    margin: @titlemargin;
+}
+.pic{
+    display: inline-block;
+    .img(50px,50px)
+}
