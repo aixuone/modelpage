@@ -1,9 +1,11 @@
 import axios from 'axios'
-import showAlert from 'showAlert'
+import Message from 'message'
+
 var instance = axios.create({
     // baseURL: process.env.VUE_APP_URL,
     withCredentials: true
   });
+
 instance.interceptors.response.use(
 res => {
     // console.log(res);
